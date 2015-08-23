@@ -1,0 +1,31 @@
+/* -------------------------
+	Global
+------------------------- */
+
+.title {
+	font-size: 4rem;
+	margin-bottom: 28px;
+}
+
+iframe[src*="embed.spotify.com"] {
+	width: 100%;
+	height: 80px;
+	margin: 7px 0;
+}
+
+.fb-comments,
+.fb-comments span,
+.fb-comments iframe[style] {
+	width: 100% !important;
+}
+
+audio { width: 100%; }
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+audio,
+video {
+	margin-bottom: 42px;
+}

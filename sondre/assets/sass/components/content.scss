@@ -1,0 +1,89 @@
+/* -------------------------
+	Main content
+------------------------- */
+/* View all */
+.explain {
+	text-align: center;
+}
+
+	.explain a {
+		display: inline-block;
+		border: none;
+		background-color: transparent;
+		border: 3px solid #333;
+		color: #333;
+		padding: 14px 21px;
+		margin: 14px 0;
+	}
+
+		.explain a:hover {
+			background-color: #EAEAEA;
+		}
+
+/* Frontpage */
+.about-sondre {
+	position: relative;
+	margin: 4rem 0;
+	width: 100%;
+	padding: 7rem;
+	background-image: url('../img/face.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+    background-size: cover;
+	background-attachment: fixed;
+	box-shadow: inset 0px 0px 2rem 0px rgba(0,0,0,0.05);
+}
+
+	.about-sondre__overlay {
+		text-align: center;
+	}
+
+		.about-sondre__tagline {
+			font-weight: 100;
+			font-size: 4.5rem;
+			line-height: 2;
+			text-align: center;
+			transition: all 0.5s;
+		}
+
+	.about .description {
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		-m-columns: 2;
+		columns: 2;
+	}
+
+/* Description */
+.main-description {
+	padding: 35px 0 84px;
+	text-align: center;
+}
+
+	.main-description p {
+		margin: 0;
+		font-size: 3.5rem;
+		font-weight: 200;
+	}
+
+	.main-description.small p {
+		font-size: 2.5rem;
+	}
+
+/* Sponsors */
+.sponsors h1 {
+	text-align: center;
+	font-weight: 200;
+}
+
+	.sponsor-list {
+		width: 100%;
+	}
+
+		.sponsor-list li {
+			list-style: none;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			max-height: 200px;
+		}

@@ -1,0 +1,104 @@
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .about-sondre {
+    background-size: 100% auto;
+  }
+  .site-menu li a {
+    font-size: 1rem;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .about-sondre {
+    background-size: 100% auto;
+  }
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  .main-description p {
+    font-size: 1.5rem;
+  }
+  .post-header {
+    font-size: 3.5rem;
+  }
+  .post-thumbnail {
+    max-height: 100%;
+  }
+  .back {
+    position: static;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 28px auto 7px;
+    text-align: center;
+  }
+  .back-to-top {
+    position: static;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    height: 0;
+    text-align: center;
+  }
+  .footer-links,
+  .post-social {
+    display: block;
+  }
+  .footer-links li {
+    margin: 28px auto;
+  }
+  .about-sondre {
+    background-position: top center;
+  }
+  .about-sondre .tagline {
+    font-size: 3.5rem;
+    color: white;
+  }
+  .about .description {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    -m-columns: 1;
+    columns: 1;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 48rem) {
+  .post-social li {
+    display: block;
+    margin: 21px auto;
+    text-align: center;
+  }
+  .site-menu {
+    margin-top: 14px;
+  }
+  .site-menu li {
+    display: block;
+  }
+  .search input {
+    max-width: 300px;
+    width: 100%;
+    padding: 21px;
+  }
+  .about-sondre {
+    background-size: cover;
+  }
+  .back {
+    position: static;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 28px auto;
+    text-align: center;
+  }
+}

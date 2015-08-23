@@ -1,0 +1,134 @@
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+
+	/* iPad */
+	@media only screen and (min-device-width : 48rem) and (max-device-width : 64rem)  {
+		.about-sondre {
+			background-size: 100% auto;
+		}
+		.site-menu li a {
+			font-size: 1rem;
+		}
+	}
+
+    /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 48rem) {
+		.site-header__title {
+			font-size: 2.5rem;
+		}
+
+        .site-menu li > .sub-menu {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+        }
+
+            .sub-menu li a {
+                //text-align: left;
+                opacity: 0.5;
+
+                &::before {
+                    content: "\21b3";
+                    padding-right: 0.5rem;
+                    font-size: 0.85rem;
+                    vertical-align: text-top;
+                }
+            }
+
+		.main-description p {
+			font-size: 1.5rem;
+		}
+    	.post-header {
+    		font-size: 3rem;
+    	}
+
+        .post {
+            margin-bottom: 0.5rem;
+        }
+
+    	.post-thumbnail {
+    		max-height: 100%;
+            margin-bottom: 1rem;
+    	}
+
+            .posts .post-thumbnail {
+                min-height: 30vh;
+            }
+
+        .post-overlay {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.45);
+        }
+
+            .post-excerpt {
+                display: none;
+            }
+
+    	.article-nav {
+    		position: relative;
+    		top: 0;
+    		left: 0;
+    		display: block;
+			padding: 2rem 0;
+			text-align: center;
+    	}
+
+            .article-nav__back, 
+            .article-nav__to-top {
+                padding: 2rem;
+            }
+
+            .article-nav__to-top {
+                display: none;
+            }
+
+		.footer-links,
+    	.post-social {
+			display: block;
+    	}
+    		.footer-links li {
+    			margin: 2rem auto;
+    		}
+
+    	.about-sondre {
+    		background-position: top center;
+            padding: 4rem 1rem;
+    	}
+
+	    	.about-sondre__tagline {
+	    		font-size: 3rem;
+	    		color: white;
+	    	}
+
+    	.about .description {
+    		-webkit-columns: 1;
+			-moz-columns: 1;
+			-m-columns: 1;
+			columns: 1;
+    	}
+
+    	.post-social li {
+    		display: block;
+    		margin: 1.5rem auto;
+    		text-align: center;
+    	}
+
+    	.site-menu {
+    		margin-top: 1rem;
+    	}
+
+    	.site-menu li {
+    		display: block;
+    	}
+
+    	.search .search-field {
+    		max-width: 100%;
+    		width: 100%;
+			padding: 21px
+    	}
+
+    	.about-sondre {
+    		background-size: cover;
+    	}
+    }

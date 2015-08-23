@@ -1,0 +1,51 @@
+/* -------------------------
+	Footer
+------------------------- */
+.footer {
+  margin: 5rem 0;
+}
+
+.footer-links {
+  width: 100%;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-links li {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 14px 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+footer .copy {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+footer .copy a {
+  font-weight: 400;
+}
+
+footer li .twitter .fa,
+footer li .instagram .fa {
+  font-size: 1.25em;
+  vertical-align: middle;
+  color: #00acee;
+  margin-right: 7px;
+}
+
+footer li .instagram .fa-instagram {
+  color: #3f729b;
+}

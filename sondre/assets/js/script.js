@@ -1,0 +1,67 @@
+$(window).load(function() {
+  var wWidth = $(this).width(),
+      postHeaderOffset = $('.post-header').offset();
+  
+  if (wWidth < (16 * 48) ) {
+    //$('body, html').animate({ scrollTop : postHeaderOffset.top }, 1000, 'easeOutExpo');
+    $('body, html').scrollTop( postHeaderOffset.top );
+  }
+});
+
+$(document).ready(function() {
+  var thumbnail = $('.posts .post-thumbnail'),
+      thumbnailWidth = thumbnail.width()
+      thumbnailRatio = 16 / 9,
+      thumbnailHeight = thumbnailWidth / thumbnailRatio;
+      //thumbnail.css('max-height', thumbnailHeight),
+      windowHeight = $(window).height();
+
+
+  $('iframe[src*="embed.spotify.com"]').each( function() {
+    $(this).css('width',$(this).parent(1).css('width'));
+    $(this).attr('src',$(this).attr('src'));
+
+  });
+
+  $('.show-youtube').click(function() {
+    var txt = $('.youtube-audio').is(':hidden') ? 'Har du ikke Spotify? Gjem YouTube' : 'Har du ikke Spotify? Vis YouTube';
+    $('.show-youtube').text(txt);
+    $('.youtube-audio').slideToggle(500);
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > windowHeight) {
+      $('.js-to-top').addClass('is-active');
+    } else if ($(this).scrollTop() < windowHeight) {
+      $('.js-to-top').removeClass('is-active');
+    };
+  });
+
+  $('.js-to-top').click(function() {
+    $('body, html').animate({ scrollTop : 0 }, 3000, 'easeOutExpo');
+  });
+
+  $('.show-old-comments').click(function() {
+      var txt = $('.old-comments').is(':hidden') ? 'Gjem gamle kommentarer' : 'Vis gamle kommentarer';
+      $(this).text(txt);
+      $('.old-comments').slideToggle(500);
+  });
+
+  $('.video-js').css('width', '100%').css('height', 'auto');
+
+  $('.js-back').click(function(e) {
+    if ( history.length > 1 ) {
+      e.preventDefault();
+      history.go(-1);
+    }
+  });
+
+});
+
+$(window).resize(function() {
+  $('iframe[src*="embed.spotify.com"]').each( function() {
+    $(this).css('width',$(this).parent(1).css('width'));
+    $(this).attr('src',$(this).attr('src'));
+  });
+});
+

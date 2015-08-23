@@ -1,0 +1,269 @@
+/* Post */
+.post {
+	margin-bottom: 2rem;
+}
+
+		.back-to-top:hover {
+			cursor: pointer;
+		}
+
+	.post-header {
+		text-align: center;
+		font-size: 4rem;
+		font-weight: 200;
+		margin: 0;
+		padding: 2.5rem 0;
+	}
+
+	.post-thumbnail {
+		position: relative;
+		overflow: hidden;
+		margin: 0;
+
+		background-position: center;
+		background-size: 100%;
+		background-size: cover;
+		background-color: #DDD;
+
+		.post & {
+			margin-bottom: 2rem;
+		}
+
+		.posts & {
+			min-height: 12rem;
+			min-height: 25vh;
+		}
+	}
+
+		.attachment-post-thumbnail {
+			width: 100%;
+		}
+
+		.post-link {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			visibility: hidden;
+
+			display: flex;
+		    flex-wrap: wrap;
+		    align-content: center;
+			padding: 1rem;
+
+			text-align: center;
+			background: rgba(0,0,0,0.75);
+			background-size: 25%;
+			background-position: center;
+			background-repeat: no-repeat;
+			transition: all 0.5s;
+
+			.post-thumbnail:hover & {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		.post-title {
+			display: block;
+			width: 100%;
+			margin: auto;
+			color: white;
+			font-size: 1.5rem;
+			font-weight: 300;
+			line-height: 1.4;
+		}
+
+		.post-excerpt {
+			display: block;
+			width: 100%;
+			margin: auto;
+			margin-top: 1rem;
+			color: white;
+			font-size: 1rem;
+			font-weight: 200;
+			line-height: 1.4;
+		}
+
+	.post-description p {
+		font-weight: 400;
+		color: #181818;
+	}
+
+	.post-content blockquote {
+		margin: 0;
+		margin-bottom: 1.5rem;
+		padding: 1rem 2rem 1px;
+		border-left: 0.25rem solid #DEDEDE;
+	}
+
+	.post-content .embed-youtube {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		margin: 21px 0;
+	}
+
+		.post-content .embed-youtube .youtube-player {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	.post-meta {
+
+	}
+
+		.post-meta__date {
+			opacity: 0.5;
+			font-style: italic;
+		}
+
+	.post-social {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+		width: 100%;
+		margin: 70px auto 84px;
+	}
+
+		.post-social > div {
+			width: 100%;
+			margin: 7px auto 28px;
+		}
+
+		.mt-share-list-bar-sm {
+			margin: auto;
+		}
+
+		.mt-share-list-bar-sm a:hover  {
+		     z-index:  50;
+		     -webkit-transform:  scale(1.075);
+		 }
+
+		.mt-share-list-bar-sm a {
+		     display:  inline-block;
+		     width:  auto;
+		     padding: 0 42px;
+		     margin-right: 7px;
+		     text-align:  center;
+		     position:  relative;
+		     transition:  all 100ms ease-in;
+		     -webkit-transition:  all 100ms ease-in;
+		     -webkit-transform:  scale3d(1,  1,  1);
+		 }
+
+		 .mt-share-list-bar-sm img  {
+		     width:  56px;
+		     height:  auto;
+		     border:  0px;
+		 }
+
+		.mt-google  { background-color:  rgb(221,  75,  57); }
+			.mt-google:hover  { background-color:  rgb(225,  95,  79); }
+
+		.mt-twitter  { background-color:  rgb(0,  172,  238); }
+			.mt-twitter:hover  { background-color:  rgb(8,  187,  255); }
+
+		.mt-facebook  { background-color:  rgb(59,  89,  152); }
+			.mt-facebook:hover  { background-color:  rgb(66,  100,  170); }
+
+		.post-social .follow {
+			display: table;
+		}
+
+		.fb_iframe_widget {
+			display: table-cell;
+		}
+
+		.instagram-follow {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+			.instagram-follow .instagram {
+				display: inline-block;
+			}
+
+				.instagram-follow .fa-instagram {
+					margin-right: 7px;
+					vertical-align: middle;
+					color: #3f729b;
+				}
+
+	.post-navigation {
+		float: left;
+		display: block;
+		width: 100%;
+		margin-bottom: 7rem;
+	}
+
+		.post-navigation a {
+			display: inline-block;
+			opacity: 0.5;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.post-navigation a[rel="next"] {
+			float: left;
+		}
+
+		.post-navigation a[rel="prev"] {
+			float: right;
+		}
+
+		.post-navigation .meta-nav {
+			font-size: 2rem;
+			font-weight: 300;
+		}
+
+		.post-navigation .nav-title {
+			padding: 0 1rem;
+		}
+
+	.follow {
+		text-align: center;
+	}
+
+	.youtube-audio {
+		position: relative;
+		padding-top: 1.5625em;
+		padding-bottom: 3px;
+		height: 0;
+		margin-bottom: 1em;
+	}
+
+	.youtube-audio iframe,
+	.youtube-audio object,
+	.youtube-audio embed,
+	.youtube-audio video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.show-youtube {
+		font-weight: 600;
+	}
+
+	.show-youtube:hover {
+		cursor: pointer;
+	}
+
+.gallery {
+	padding-bottom: 1.5rem;
+}

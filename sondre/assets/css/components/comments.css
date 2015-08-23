@@ -1,0 +1,156 @@
+/* Comments */
+.comments {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.commentlist {
+  width: 100%;
+}
+
+.comment-title {
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 21px;
+  display: inline-block;
+}
+
+/* Single comment */
+.comment {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 21px 0;
+}
+
+.comment:last-child {
+  border: none;
+}
+
+.comment-body {
+  margin-bottom: 21px;
+}
+
+.comment-author {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 14px 14px 0;
+  border: none;
+  padding: 0 7px 0 0;
+}
+
+.comment-author .avatar {
+  display: none;
+}
+
+.comment-metadata {
+  display: none;
+  vertical-align: text-bottom;
+  font-size: 0.77em;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+.comment-content {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.comment-content p {
+  margin-bottom: 7px;
+}
+
+/* Replies */
+.comment .children {
+  margin: 0;
+  padding: 0;
+}
+
+.comment .children li {
+  margin: 0;
+  padding: 14px 0 14px 35px;
+  border-left: 3px solid rgba(128, 128, 128, 0.2);
+}
+
+.comment .children li:last-child {
+  margin-bottom: 0;
+}
+
+.comment .children li .comment-body {
+  margin-bottom: 14px;
+}
+
+.comment-form {
+  margin-top: 21px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 14px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #F1F1F1;
+  margin-bottom: 0;
+  transition: all 0.5s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #EAEAEA;
+}
+
+.comment-form input:required,
+.comment-form textarea:required {
+  border-left: 5px solid rgba(241, 69, 72, 0.75);
+  transition: all 0.5s;
+}
+
+.comment-form input:required:valid,
+.comment-form textarea:required:valid {
+  border-left: 0px solid rgba(241, 69, 72, 0.75);
+  transition: all 0.5s;
+}
+
+.comment-form textarea {
+  min-height: 200px;
+}
+
+.comment-form input[type="submit"] {
+  border: none;
+  background-color: transparent;
+  border: 3px solid #333;
+  color: #333;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin: 28px 0 0;
+  padding: 14px 21px;
+}
+
+.comment-form input[type="submit"]:hover {
+  background-color: #EAEAEA;
+}
+
+.comment-form .notifications {
+  margin: 14px 0 28px;
+}
+
+.notifications p {
+  margin: 7px 0;
+  opacity: 0.75;
+}
+
+.notifications .error {
+  color: #ee1a1f;
+}
+
+.notifications .success {
+  color: #33a423;
+}
