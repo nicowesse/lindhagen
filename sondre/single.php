@@ -27,7 +27,7 @@ get_header(); ?>
 
 				<section class="post-meta">
 					<!--<span class="post-meta__date"><strong>Publisert: </strong><?php the_date( 'd.m.y' ); ?></span>-->
-					<span class="post-meta__date post-meta__date--modified"><strong>Sist oppdatert:</strong> <?php the_modified_time('d.m.y'); ?></span>
+					<!--<span class="post-meta__date post-meta__date--modified"><strong>Sist oppdatert:</strong> <?php the_modified_time('d.m.y'); ?></span>-->
 				</section>
 
 				<aside class="post-social">
