@@ -1,23 +1,6 @@
 /* Post */
 .post {
-  margin-bottom: 21px;
-}
-
-.back {
-  position: fixed;
-  top: 56px;
-  left: 84px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.back-to-top {
-  position: fixed;
-  top: 156px;
-  left: 92px;
-  display: none;
-  font-size: 2rem;
-  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .back-to-top:hover {
@@ -28,31 +11,30 @@
   text-align: center;
   font-size: 4rem;
   font-weight: 200;
-  margin: 1.5rem 0 2.5rem;
+  margin: 0;
+  padding: 2.5rem 0;
 }
 
 .post-thumbnail {
   position: relative;
   overflow: hidden;
-  margin: 0 0 2rem;
+  margin: 0;
   background-position: center;
+  background-size: 100%;
   background-size: cover;
-}
-
-.post-thumbnail img {
-  width: 100%;
-}
-
-.posts .post-thumbnail {
-  min-height: 30vh;
   background-color: #DDD;
 }
 
-.post-thumbnail.video {
-  max-height: 100%;
+.posts .post-thumbnail {
+  min-height: 12rem;
+  min-height: 25vh;
 }
 
-.post-thumbnail .post-overlay {
+.attachment-post-thumbnail {
+  width: 100%;
+}
+
+.post-link {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -61,18 +43,11 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  visibility: hidden;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 1rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.75);
   background-size: 25%;
@@ -81,16 +56,12 @@
   transition: all 0.5s;
 }
 
-.post-thumbnail:hover .post-overlay,
-.post-thumbnail:active .post-overlay {
+.post-thumbnail:hover .post-link {
   opacity: 1;
+  visibility: visible;
 }
 
-.post-thumbnail .post-link {
-  padding: 1rem;
-}
-
-.post-thumbnail .post-title {
+.post-title {
   display: block;
   width: 100%;
   margin: auto;
@@ -100,7 +71,7 @@
   line-height: 1.4;
 }
 
-.post-thumbnail .post-excerpt {
+.post-excerpt {
   display: block;
   width: 100%;
   margin: auto;
@@ -118,9 +89,9 @@
 
 .post-content blockquote {
   margin: 0;
-  margin-bottom: 21px;
-  padding: 14px 35px 1px;
-  border-left: 5px solid #DEDEDE;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem 1px;
+  border-left: 0.25rem solid #DEDEDE;
 }
 
 .post-content .embed-youtube {
@@ -140,20 +111,15 @@
   height: 100%;
 }
 
+.post-meta__date {
+  opacity: 0.5;
+  font-style: italic;
+}
+
 .post-social {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
@@ -243,7 +209,24 @@
   float: left;
   display: block;
   width: 100%;
-  margin-bottom: 49px;
+  margin-bottom: 7rem;
+}
+
+.post-navigation a {
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.post-navigation a:hover {
+  opacity: 1;
+}
+
+.post-navigation a[rel="next"] {
+  float: left;
+}
+
+.post-navigation a[rel="prev"] {
+  float: right;
 }
 
 .post-navigation .meta-nav {
@@ -251,18 +234,8 @@
   font-weight: 300;
 }
 
-.post-navigation .meta-nav.prev {
-  float: right;
-}
-
 .post-navigation .nav-title {
-  opacity: 0.5;
-  margin: 0 14px;
-  transition: all 0.5s;
-}
-
-.post-navigation .meta-nav:hover .nav-title {
-  opacity: 1;
+  padding: 0 1rem;
 }
 
 .follow {
@@ -297,5 +270,5 @@
 }
 
 .gallery {
-  padding-bottom: 21px;
+  padding-bottom: 1.5rem;
 }
