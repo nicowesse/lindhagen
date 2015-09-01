@@ -29,6 +29,10 @@
 			min-height: 12rem;
 			min-height: 25vh;
 		}
+
+		.posts--sticky & {
+			min-height: 50vh;
+		}
 	}
 
 		.attachment-post-thumbnail {
@@ -72,6 +76,10 @@
 			font-size: 1.5rem;
 			font-weight: 300;
 			line-height: 1.4;
+
+			.posts--sticky & {
+				font-size: 3rem;
+			}
 		}
 
 		.post-excerpt {

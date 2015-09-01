@@ -22,6 +22,21 @@ while ( have_posts() ) : the_post();
 	<?php
 	if (is_page()) :
 
+		$sticky = get_option( 'sticky_posts' );
+        // first loop to display only my single,
+        // MOST RECENT sticky post
+        $most_recent_sticky_post = new WP_Query( array(
+            'post__in'            => get_option( 'sticky_posts' ),
+            'ignore_sticky_posts' => 1,
+            'orderby'             => 'date',
+            'posts_per_page'      => 1
+        ) );
+
+        while ( $most_recent_sticky_post->have_posts() ) :  $most_recent_sticky_post->the_post();
+        	get_template_part( 'content', 'sticky' );
+    	endwhile;
+    	wp_reset_query();
+
 		$cat = 1; //use page title to get a category ID
 		$posts = get_posts( "cat=$cat&showposts=6" );
 		if ($posts) :
