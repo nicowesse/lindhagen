@@ -262,7 +262,7 @@ video {
     min-height: 12rem;
     min-height: 25vh; }
   .posts--sticky .post-thumbnail {
-    min-height: 50vh; }
+    min-height: calc(50vh + 2rem); }
 
 .attachment-post-thumbnail {
   width: 100%; }
