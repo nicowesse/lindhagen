@@ -9,7 +9,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) );
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
 $thumbnail_url = $thumbnail[0];
 $excerpt = get_the_excerpt();
 ?>

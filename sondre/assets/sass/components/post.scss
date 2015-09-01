@@ -91,6 +91,11 @@
 			font-size: 1rem;
 			font-weight: 200;
 			line-height: 1.4;
+
+			.posts--sticky & {
+				font-size: 1.25rem;
+				margin-top: 1.5rem;
+			}
 		}
 
 	.post-description p {
