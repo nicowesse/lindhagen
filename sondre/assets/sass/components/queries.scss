@@ -56,10 +56,11 @@
                 min-height: 30vh;
             }
 
-        .post-overlay {
-            opacity: 1;
-            background-color: rgba(0, 0, 0, 0.45);
-        }
+            .post-link {
+                opacity: 1;
+                visibility: visible;
+                background-color: rgba(0, 0, 0, 0.25);
+            }
 
             .posts--sticky .post-title {
                 font-size: 1.5rem;
