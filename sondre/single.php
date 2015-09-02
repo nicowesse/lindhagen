@@ -9,7 +9,7 @@
 
 define(THEME_URL, get_bloginfo('template_url'));
 
-$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 $thumbnail_url = $thumbnail[0];
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 			?>
 			</section><!-- END ROW -->
-			
+
 			<figure class="post__thumbnail post__thumbnail--large" style="background-image: url('<?php echo $thumbnail_url; ?>')">
 				<h1 class="post__header post__header--thumbnail"><?php echo the_title(); ?></h1>
 			</figure>
