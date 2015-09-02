@@ -31,7 +31,8 @@
 		}
 
 		.posts--sticky & {
-			min-height: calc(50vh + 2rem);
+			min-height: 50vh;
+			background-position-y: 15%;
 		}
 	}
 
@@ -78,7 +79,7 @@
 			line-height: 1.4;
 
 			.posts--sticky & {
-				font-size: 3rem;
+				font-size: 2rem;
 			}
 		}
 

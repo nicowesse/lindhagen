@@ -39,11 +39,11 @@ while ( have_posts() ) : the_post();
 
 
 		$cat = 1; //use page title to get a category ID
-		//$posts = get_posts( "cat=$cat&showposts=6" );	
-		$posts = get_posts( array( 
-			'post__not_in' => get_option( 'sticky_posts' ), 
-			'posts_per_page' => 6, 
-			'category' => 1 
+		//$posts = get_posts( "cat=$cat&showposts=6" );
+		$posts = get_posts( array(
+			'post__not_in' => get_option( 'sticky_posts' ),
+			'posts_per_page' => 5,
+			'category' => 1
 		) );
 
 		if ($posts) :

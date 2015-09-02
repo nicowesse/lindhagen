@@ -14,7 +14,7 @@ $thumbnail_url = $thumbnail[0];
 $excerpt = get_the_excerpt();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('large-8 columns posts posts--sticky'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('large-12 columns posts posts--sticky'); ?>>
 	<figure class="post-thumbnail" style="background-image: url('<?php echo $thumbnail_url; ?>');">
 		<?php //the_post_thumbnail(); ?>
 		<?php //the_title( '<a class="post-title" href="' . esc_url( get_permalink() ) . '">', '</a>' ); ?>
