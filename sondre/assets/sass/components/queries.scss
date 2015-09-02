@@ -47,14 +47,14 @@
             margin-bottom: 0.5rem;
         }
 
-    	.post__thumbnail {
-    		max-height: 100%;
-            margin-bottom: 1rem;
-    	}
+        	.post__thumbnail {
+        		max-height: 100%;
+                margin-bottom: 1rem;
+        	}
 
-            .posts .post__thumbnail {
-                min-height: 30vh;
-            }
+                .posts .post__thumbnail {
+                    min-height: 30vh;
+                }
 
             .post__link {
                 opacity: 1;
@@ -68,6 +68,12 @@
 
             .post__excerpt {
                 display: none;
+            }
+
+            .post-navigation a {
+                display: block;
+                margin: 1.5rem 0;
+                text-align: center;
             }
 
     	.article-nav {
@@ -117,11 +123,15 @@
 			columns: 1;
     	}
 
-    	.post__social li {
-    		display: block;
-    		margin: 1.5rem auto;
-    		text-align: center;
-    	}
+        .post__social {
+            flex-direction: column;
+        }
+
+        	.mt-share-list-bar-sm a {
+        		display: block;
+        		margin: 1.5rem auto;
+        		text-align: center;
+        	}
 
     	.site-menu {
     		margin-top: 1rem;

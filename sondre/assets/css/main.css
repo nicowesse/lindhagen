@@ -904,6 +904,11 @@ footer li .instagram .fa-instagram {
   .post__excerpt {
     display: none;
   }
+  .post-navigation a {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
   .article-nav {
     position: relative;
     top: 0;
@@ -943,7 +948,10 @@ footer li .instagram .fa-instagram {
     -m-columns: 1;
     columns: 1;
   }
-  .post__social li {
+  .post__social {
+    flex-direction: column;
+  }
+  .mt-share-list-bar-sm a {
     display: block;
     margin: 1.5rem auto;
     text-align: center;
