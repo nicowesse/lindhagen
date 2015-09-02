@@ -82,6 +82,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: $z3;
 	padding: 2.5rem 1rem 1rem 5rem;
 	padding: 4vh 1rem 1rem 4vw;
 	font-size: 2rem;
@@ -95,6 +96,15 @@
 	&:hover {
 		opacity: 1;
 	}
+
+	&.on-bg {
+		opacity: 0.5;
+		color: #FFF;
+	}
+
+	&.on-white {
+		color: #222;
+	}
 }
 
 	.article-nav__home {
@@ -103,12 +113,14 @@
 		font-size: 1.5rem;
 		font-weight: 300;
 		line-height: 1.4;
+		color: currentColor;
 	}
 
 	.article-nav__back,
 	.article-nav__to-top {
 		display: block;
 		padding: 0 0 4rem;
+		color: currentColor;
 	}
 
 	.article-nav__to-top {

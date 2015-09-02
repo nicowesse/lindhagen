@@ -15,13 +15,13 @@ $excerpt = get_the_excerpt();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('large-12 columns posts posts--sticky'); ?>>
-	<figure class="post-thumbnail" style="background-image: url('<?php echo $thumbnail_url; ?>');">
+	<figure class="post__thumbnail" style="background-image: url('<?php echo $thumbnail_url; ?>');">
 		<?php //the_post_thumbnail(); ?>
 		<?php //the_title( '<a class="post-title" href="' . esc_url( get_permalink() ) . '">', '</a>' ); ?>
-        <a class="post-link" href="<?php the_permalink(); ?>">
-            <span class="post-title"><?php the_title(); ?></span>
+        <a class="post__link" href="<?php the_permalink(); ?>">
+            <span class="post__title"><?php the_title(); ?></span>
             <?php if ( get_field('sitat') ) : ?>
-            <span class="post-excerpt"><?php the_field('sitat'); ?></span>
+            <span class="post__excerpt"><?php the_field('sitat'); ?></span>
         <?php endif; ?>
         </a>
 	</figure>

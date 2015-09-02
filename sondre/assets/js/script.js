@@ -29,11 +29,15 @@ $(document).ready(function() {
     $('.youtube-audio').slideToggle(500);
   });
 
+  var postThumbnailHeight = $('.post__thumbnail--large').height();
+
   $(window).scroll(function() {
-    if ($(this).scrollTop() > windowHeight) {
-      $('.js-to-top').addClass('is-active');
-    } else if ($(this).scrollTop() < windowHeight) {
-      $('.js-to-top').removeClass('is-active');
+    if ($(this).scrollTop() > postThumbnailHeight) {
+      $('.article-nav').removeClass('on-bg');
+      $('.article-nav').addClass('on-white');
+    } else if ($(this).scrollTop() < postThumbnailHeight) {
+      $('.article-nav').removeClass('on-white');
+      $('.article-nav').addClass('on-bg');
     };
   });
 

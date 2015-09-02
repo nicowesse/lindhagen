@@ -8,29 +8,41 @@
  */
 
 define(THEME_URL, get_bloginfo('template_url'));
+
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+$thumbnail_url = $thumbnail[0];
+
 get_header(); ?>
 
 	<?php
 		// Start the Loop.
 		while ( have_posts() ) : the_post();
 			?>
+			</section><!-- END ROW -->
+			
+			<figure class="post__thumbnail post__thumbnail--large" style="background-image: url('<?php echo $thumbnail_url; ?>')">
+				<h1 class="post__header post__header--thumbnail"><?php echo the_title(); ?></h1>
+			</figure>
+			
+			<section class="row">
+
 			<article class="large-10 columns large-centered post">
-				<h1 class="post-header"><?php echo the_title(); ?></h1>
+				<!--<h1 class="post__header"><?php echo the_title(); ?></h1>
 
-				<figure class="post-thumbnail">
+				<figure class="post__thumbnail post__thumbnail--content">
 					<?php the_post_thumbnail(); ?>
-				</figure>
+				</figure>-->
 
-				<section class="post-content">
+				<section class="post__content">
 					<?php echo the_content(); ?>
 				</section>
 
-				<section class="post-meta">
+				<section class="post__meta">
 					<!--<span class="post-meta__date"><strong>Publisert: </strong><?php the_date( 'd.m.y' ); ?></span>-->
 					<!--<span class="post-meta__date post-meta__date--modified"><strong>Sist oppdatert:</strong> <?php the_modified_time('d.m.y'); ?></span>-->
 				</section>
 
-				<aside class="post-social">
+				<aside class="post__social">
 					<div class="mt-share-list-bar-sm">
 						<a class="mt-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" title="Del på Facebook">
 							<img src="http://mojotech-static.s3.amazonaws.com/facebook@2x.png">

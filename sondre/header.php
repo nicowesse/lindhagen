@@ -94,7 +94,7 @@
 
 			<?php else : ?>
 			
-			<div class="article-nav">
+			<div class="article-nav on-bg">
 				<a href="/" class="article-nav__home" title="Back">Sondre <br>Lindhagen</a>
 				<a href="/" class="article-nav__back js-back" title="Back">←</a>
 				<span class="article-nav__to-top js-to-top" title="Back to top">↑</span>
