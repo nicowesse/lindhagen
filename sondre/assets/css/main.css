@@ -139,17 +139,18 @@ video {
   transition: 250ms;
 }
 
-.article-nav:hover {
-  opacity: 1;
-}
-
 .article-nav.on-bg {
   opacity: 0.5;
   color: #FFF;
 }
 
 .article-nav.on-white {
+  opacity: 0.1;
   color: #222;
+}
+
+.article-nav:hover {
+  opacity: 1;
 }
 
 .article-nav__home {

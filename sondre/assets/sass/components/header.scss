@@ -93,17 +93,18 @@
 
 	transition: 250ms;
 
-	&:hover {
-		opacity: 1;
-	}
-
 	&.on-bg {
 		opacity: 0.5;
 		color: #FFF;
 	}
 
 	&.on-white {
+		opacity: 0.1;
 		color: #222;
+	}
+
+	&:hover {
+		opacity: 1;
 	}
 }
 
