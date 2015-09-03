@@ -19,19 +19,24 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 			?>
 			</section><!-- END ROW -->
-
-			<figure class="post__thumbnail post__thumbnail--large" style="background-image: url('<?php echo $thumbnail_url; ?>')">
-				<h1 class="post__header post__header--thumbnail"><?php echo the_title(); ?></h1>
-			</figure>
+			
+			<header class="post__header post__header--large">
+				<figure class="post__thumbnail post__thumbnail" style="background-image: url('<?php echo $thumbnail_url; ?>')">
+					<h1 class="post__header-title post__header--thumbnail"><?php echo the_title(); ?></h1>
+				</figure>
+			</header>
+			
 			
 			<section class="row">
 
 			<article class="large-10 columns large-centered post">
-				<!--<h1 class="post__header"><?php echo the_title(); ?></h1>
+				<header class="post__header post__header--mobile">
+					<h1 class="post__header-title"><?php echo the_title(); ?></h1>
 
-				<figure class="post__thumbnail post__thumbnail--content">
-					<?php the_post_thumbnail(); ?>
-				</figure>-->
+					<figure class="post__thumbnail post__thumbnail--content">
+						<?php the_post_thumbnail(); ?>
+					</figure>
+				</header>
 
 				<section class="post__content">
 					<?php echo the_content(); ?>

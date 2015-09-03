@@ -18,20 +18,29 @@
 			<title><?php wp_title( '-', true, 'right' ); ?></title>
 			<link rel="profile" href="http://gmpg.org/xfn/11">
 			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+			<meta name="description" content="Enter your content here.">
 			<link rel="icon" href="<?php echo THEME_URL . '/favicon.ico'; ?>">
+
 			<link rel="stylesheet" href="<?php echo THEME_URL . '/assets/css/foundation.css'; ?>">
 			<link rel="stylesheet" href="<?php echo THEME_URL . '/assets/css/main.css'; ?>">
+
 			<link rel="stylesheet" href="<?php echo THEME_URL . '/assets/css/mnml-video-js.css'; ?>">
+
 			<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css" rel="stylesheet">
+
 			<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
+
 			<script>var base = '<?php echo THEME_URL; ?>';</script>
 			<script src="<?php echo THEME_URL . '/assets/js/vendor/zepto.js'; ?>"></script>
 			<?php //wp_head(); ?>
+
 			<?php if (has_post_thumbnail( $post->ID ) ) { $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' ); } ?>
+
 			<?php $description = get_excerpt_by_id( $post->ID ); ?>
+
 			<!-- Facebook -->
 			<meta property="fb:admins" content="1510546796" />
 			<meta property="fb:admins" content="1065501018" />
@@ -43,6 +52,7 @@
 			<meta property="og:image" content="<?php echo THEME_URL . "/assets/img/logo.png"; ?>">
 			<meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 			<meta property="og:description" content="<?php echo $description; ?>">
+
 			<!-- Twitter -->
 			<meta name="twitter:card" content="summary_large_image">
 			<meta name="twitter:domain" content="www.lindhagen.no">
@@ -50,6 +60,7 @@
 			<meta name="twitter:title" content="<?php single_post_title(); ?>">
 			<meta name="twitter:description" content="<?php echo $description; ?>">
 			<meta name="twitter:image:src" content="<?php echo $image[0]; ?>">
+			
 		</head>
 		<body <?php body_class(); ?>>
 			<script>

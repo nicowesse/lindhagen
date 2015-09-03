@@ -45,6 +45,9 @@ video {
 /* ====================
 	Z-Index scale
 ==================== */
+/* ====================
+	Lindhagen colors
+==================== */
 /* -------------------------
 	Header
 ------------------------- */
@@ -307,10 +310,7 @@ video {
 
 .post__header {
   text-align: center;
-  font-size: 4rem;
-  font-weight: 200;
   margin: 0;
-  padding: 2.5rem 0;
 }
 
 .post__header--thumbnail {
@@ -322,6 +322,23 @@ video {
   color: #FFF;
 }
 
+.post__header--mobile {
+  display: none;
+}
+
+.post__header-title {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.post__header--large .post__header-title {
+  padding: 1rem;
+}
+
+.post__header--mobile .post__header-title {
+  font-size: 3rem;
+}
+
 .post__thumbnail {
   position: relative;
   overflow: hidden;
@@ -329,14 +346,14 @@ video {
   background-position: center;
   background-size: 100%;
   background-size: cover;
-  background-color: #DDD;
+  background-color: #f14548;
 }
 
 .post__thumbnail--content {
   margin-bottom: 2rem;
 }
 
-.post__thumbnail--large {
+.post__header--large .post__thumbnail {
   min-height: 90vh;
   margin-bottom: 3rem;
   background-position: center 15%;
@@ -344,7 +361,7 @@ video {
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-.post__thumbnail--large::after {
+.post__header--large .post__thumbnail::after {
   content: '';
   position: absolute;
   left: 0;
@@ -881,11 +898,17 @@ footer li .instagram .fa-instagram {
   .main-description p {
     font-size: 1.5rem;
   }
+  .post {
+    margin-bottom: 0.5rem;
+  }
   .post__header {
     font-size: 2rem;
   }
-  .post {
-    margin-bottom: 0.5rem;
+  .post__header--mobile {
+    display: block;
+  }
+  .post__header--large {
+    display: none;
   }
   .post__thumbnail {
     max-height: 100%;

@@ -39,13 +39,23 @@
 		.main-description p {
 			font-size: 1.5rem;
 		}
-    	.post__header {
-    		font-size: 2rem;
-    	}
 
         .post {
             margin-bottom: 0.5rem;
         }
+
+            
+            .post__header {
+                font-size: 2rem;
+            }
+
+                .post__header--mobile {
+                    display: block;
+                }
+
+                .post__header--large {
+                    display: none;
+                }
 
         	.post__thumbnail {
         		max-height: 100%;
