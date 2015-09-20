@@ -37,6 +37,7 @@ document.write('<script src=' +
 
 <script src="<?php echo THEME_URL . "/assets/js/foundation.min.js"; ?>"></script>
 <script src="<?php echo THEME_URL . "/assets/js/vendor/jquery.js"; ?>"></script>
+<script src="<?php echo THEME_URL . "/assets/js/vendor/cheet.min.js"; ?>"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <!--
@@ -50,6 +51,8 @@ document.write('<script src=' +
 -->
 
 <script src="<?php echo THEME_URL . "/assets/js/script.js"; ?>"></script>
+
+<audio class="rick_audio" src="<?php echo THEME_URL . "/assets/audio/rick.mp3"; ?>"></audio>
 
 <?php wp_footer(); ?>
 </body>
