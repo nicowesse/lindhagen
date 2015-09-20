@@ -62,17 +62,24 @@ $(document).ready(function() {
 
   cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
     console.log("RICK!");
-    var rick_url = "wp-content/themes/sondre/assets/img/rick.gif";
+    var easter_url = "wp-content/themes/sondre/assets/img/rick.gif",
+        easter_name = "Rick Astley";
 
     $('.post__thumbnail').each(function() {
       $(this).css({ 'background-image': 'url("' + rick_url + '")'});
     });
     $('.about-sondre').css({ 'background-image': 'url("' + rick_url + '")'});
-    $('.site-header__title').html('Rick Astley');
-    $('.about-sondre__tagline').html('Hvem er Rick Astley?');
-    $('.main-description').html('<p>Rick Astley i fokus</p>');
+    $('.site-header__title').html(easter_name);
+    $('.about-sondre__tagline').html('Hvem er '+ easter_name +'?');
+    $('.main-description').html('<p>'+ easter_name +' i fokus</p>');
 
     $(".rick_audio")[0].play();
+  });
+
+  cheet('s t o p', function () {
+    console.log("RICK!");
+
+    $(".rick_audio")[0].pause();
   });
 
 });
