@@ -66,7 +66,7 @@ $(document).ready(function() {
         easter_name = "Rick Astley";
 
     $('.post__thumbnail').each(function() {
-      $(this).css({ 'background-image': 'url("' + rick_url + '")'});
+      $(this).css({ 'background-image': 'url("' + easter_url + '")'});
     });
     $('.about-sondre').css({ 'background-image': 'url("' + rick_url + '")'});
     $('.site-header__title').html(easter_name);
