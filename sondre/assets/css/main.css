@@ -42,6 +42,15 @@ video {
   margin-bottom: 42px;
 }
 
+p {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  text-rendering: optimizeLegibility;
+}
+
 /* ====================
 	Z-Index scale
 ==================== */
@@ -69,7 +78,7 @@ video {
 
 .site-navigation {
   background-color: #f14548;
-  margin: 14px 0 28px;
+  margin: 1rem 0 2rem;
 }
 
 .site-menu {
@@ -89,7 +98,7 @@ video {
 
 .site-menu li a {
   display: block;
-  padding: 21px 0;
+  padding: 1.5rem 0;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 300;
@@ -195,8 +204,9 @@ video {
 .search-form .search-field {
   width: 100%;
   max-width: 300px;
-  margin: 19px 0 14px;
+  margin: 1.25rem;
   height: auto;
+  font-size: 1.125rem;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -459,6 +469,10 @@ video {
 .posts--sticky .post__excerpt {
   font-size: 1.25rem;
   margin-top: 1.5rem;
+}
+
+.post__content p {
+  font-size: 1.25rem;
 }
 
 .post__description p {
@@ -924,6 +938,9 @@ footer li .instagram .fa-instagram {
   }
   .posts--sticky .post__title {
     font-size: 1.5rem;
+  }
+  .post__content p {
+    font-size: 1rem;
   }
   .post__excerpt {
     display: none;

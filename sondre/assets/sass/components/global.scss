@@ -29,3 +29,12 @@ audio,
 video {
 	margin-bottom: 42px;
 }
+
+p {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 1.125em;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    text-rendering: optimizeLegibility;
+}

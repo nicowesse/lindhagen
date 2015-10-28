@@ -60,25 +60,51 @@ $(document).ready(function() {
     }
   });
 
-  cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+  var shakeDat = new Shake({
+    threshold: 15, // optional shake strength threshold
+    timeout: 1000 // optional, determines the frequency of event generation
+  });
+
+  shakeDat.start();
+
+  window.addEventListener('shake', setRickRoll, false);
+
+  cheet('↑ ↑ ↓ ↓ ← → ← → b a', setRickRoll);
+
+  function setRickRoll() {
     console.log("RICK!");
     var easter_url = "wp-content/themes/sondre/assets/img/rick.gif",
         easter_name = "Rick Astley";
 
+    $(".rick_audio")[0].play();
+    $('.rick_audio').trigger('tap');
+
     $('.post__thumbnail').each(function() {
       $(this).css({ 'background-image': 'url("' + easter_url + '")'});
     });
-    $('.about-sondre').css({ 'background-image': 'url("' + rick_url + '")'});
+    $('.about-sondre').css({ 'background-image': 'url("' + easter_url + '")'});
     $('.site-header__title').html(easter_name);
+    $('.post__title').html(easter_name);
     $('.about-sondre__tagline').html('Hvem er '+ easter_name +'?');
     $('.main-description').html('<p>'+ easter_name +' i fokus</p>');
 
-    $(".rick_audio")[0].play();
-  });
+    if (navigator.vibrate) {
+      navigator.vibrate([500,110,500,110,450,110,200,110,170,40,450,110,200,110,170,40,500]);    
+    }
+  }
+
+  navigator.vibrate = navigator.vibrate ||
+                  navigator.webkitVibrate ||
+                  navigator.mozVibrate || 
+                  navigator.msVibrate;
+
+  if (navigator.vibrate) {
+    console.log('we can vibrate');
+  } else {
+    console.log('no vibration for you :-(');
+  }
 
   cheet('s t o p', function () {
-    console.log("RICK!");
-
     $(".rick_audio")[0].pause();
   });
 
